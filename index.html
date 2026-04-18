@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xero Degrees — Gwalior</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <h1 class="brand-name">
+                    <span class="xero">xero°</span>
+                    <span class="Degrees">Degrees</span>
+                </h1>
+            </div>
+            <p class="brand-address">City Center, Gwalior</p>
+        </div>
+
+        <nav class="main-nav">
+            <a class="nav-link" href="#pizza-Jar">Pizza Jar</a>
+            <a class="nav-link" href="#pasta">Pasta</a>
+            <a class="nav-link" href="#sandwitches-Nachos">Sandwiches</a>
+            <a class="nav-link" href="#GarlicBread">Garlic Bread</a>
+            <a class="nav-link" href="#Burgers">Burgers</a>
+            <a class="nav-link" href="#Fries-sides">Fries & Sides</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="food-gallery">
+            <figure class="gallery-item">
+                <img src="pizza_in_a_jar.png" alt="Pizza in a Jar">
+                <figcaption>Pizza Jar</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="pasta.png" alt="Pasta">
+                <figcaption>Pasta</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="sandwitch.png" alt="Sandwich">
+                <figcaption>Sandwiches</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="garlic_bread.png" alt="Garlic Bread">
+                <figcaption>Garlic Bread</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="burger.png" alt="Burger">
+                <figcaption>Burgers</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="fries.png" alt="Fries">
+                <figcaption>Fries</figcaption>
+            </figure>
+        </section>
+
+       
+        <section class="menu-section">
+            <h2 class="menu-heading">Our Menu</h2>
+
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th class="col-item">Item</th>
+                        <th class="col-price">Price</th>
+                        <th class="col-cart">Add to Cart</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="category-row" id="pizza-Jar">
+                        <td colspan="3"> Pizza in a Jar</td>
+                    </tr>
+                    <tr>
+                        <td>Veg pizza Jar</td>
+                        <td class="price">₹179</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,179,'Veg Pizza Jar')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,179,'Veg Pizza Jar')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,179,'Veg Pizza Jar')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Non-Veg Pizza Jar</td>
+                        <td class="price">₹189</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,189,'Non-Veg Pizza Jar')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,189,'Non-Veg Pizza Jar')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,189,'Non-Veg Pizza Jar')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Tikka Pizza Jar</td>
+                        <td class="price">₹199</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,199,'Paneer Tikka Pizza Jar')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,199,'Paneer Tikka Pizza Jar')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,199,'Paneer Tikka Pizza Jar')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>BBQ Chicken Pizza Jar</td>
+                        <td class="price">₹219</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,219,'BBQ Chicken Pizza Jar')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,219,'BBQ Chicken Pizza Jar')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,219,'BBQ Chicken Pizza Jar')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Farmhouse Loaded Jar</td>
+                        <td class="price">₹209</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,209,'Farmhouse Loaded Jar')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,209,'Farmhouse Loaded Jar')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,209,'Farmhouse Loaded Jar')">+</button></div></div></td>
+                    </tr>
+
+                    <tr class="category-row" id="pasta">
+                        <td colspan="3">Pasta (Penne / Spaghetti)</td>
+                    </tr>
+                    <tr>
+                        <td>Arrabbiata Pasta</td>
+                        <td class="price">₹169</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,169,'Arrabbiata Pasta')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,169,'Arrabbiata Pasta')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,169,'Arrabbiata Pasta')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>White Sauce Pasta</td>
+                        <td class="price">₹169</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,169,'White Sauce Pasta')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,169,'White Sauce Pasta')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,169,'White Sauce Pasta')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Pink Sauce Pasta</td>
+                        <td class="price">₹179</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,179,'Pink Sauce Pasta')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,179,'Pink Sauce Pasta')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,179,'Pink Sauce Pasta')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Pasta (Red/White)</td>
+                        <td class="price">₹199</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,199,'Chicken Pasta')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,199,'Chicken Pasta')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,199,'Chicken Pasta')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Pasta</td>
+                        <td class="price">₹189</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,189,'Paneer Pasta')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,189,'Paneer Pasta')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,189,'Paneer Pasta')">+</button></div></div></td>
+                    </tr>
+
+                    <!-- Sandwiches & Nachos -->
+                    <tr class="category-row" id="sandwitches-Nachos">
+                        <td colspan="3">Sandwiches &amp; Nachos</td>
+                    </tr>
+                    <tr>
+                        <td>Veg Club Sandwich</td>
+                        <td class="price">₹189</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,189,'Veg Club Sandwich')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,189,'Veg Club Sandwich')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,189,'Veg Club Sandwich')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Grill Sandwich</td>
+                        <td class="price">₹209</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,209,'Paneer Grill Sandwich')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,209,'Paneer Grill Sandwich')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,209,'Paneer Grill Sandwich')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Mexican Nachos</td>
+                        <td class="price">₹189</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,189,'Mexican Nachos')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,189,'Mexican Nachos')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,189,'Mexican Nachos')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Baked Chicken &amp; Cheese Nachos</td>
+                        <td class="price">₹239</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,239,'Chicken Nachos')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,239,'Chicken Nachos')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,239,'Chicken Nachos')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Loaded Cheese Nachos</td>
+                        <td class="price">₹219</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,219,'Cheese Nachos')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,219,'Cheese Nachos')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,219,'Cheese Nachos')">+</button></div></div></td>
+                    </tr>
+
+                    <tr class="category-row" id="GarlicBread">
+                        <td colspan="3">Garlic Bread</td>
+                    </tr>
+                    <tr>
+                        <td>Cheesy Garlic Bread</td>
+                        <td class="price">₹189</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,189,'Cheesy Garlic Bread')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,189,'Cheesy Garlic Bread')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,189,'Cheesy Garlic Bread')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Exotic Garlic Bread</td>
+                        <td class="price">₹199</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,199,'Exotic Garlic Bread')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,199,'Exotic Garlic Bread')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,199,'Exotic Garlic Bread')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Chicken &amp; Cheese Garlic Bread</td>
+                        <td class="price">₹229</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,229,'Chicken Garlic Bread')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,229,'Chicken Garlic Bread')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,229,'Chicken Garlic Bread')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Garlic Bread</td>
+                        <td class="price">₹209</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,209,'Paneer Garlic Bread')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,209,'Paneer Garlic Bread')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,209,'Paneer Garlic Bread')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Jalapeño Cheese Bread</td>
+                        <td class="price">₹199</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,199,'Jalapeno Bread')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,199,'Jalapeno Bread')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,199,'Jalapeno Bread')">+</button></div></div></td>
+                    </tr>
+
+                    <tr class="category-row" id="Burgers">
+                        <td colspan="3">Burgers</td>
+                    </tr>
+                    <tr>
+                        <td>Classic Veg Burger</td>
+                        <td class="price">₹149</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,149,'Veg Burger')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,149,'Veg Burger')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,149,'Veg Burger')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Veg Burger</td>
+                        <td class="price">₹169</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,169,'Cheese Veg Burger')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,169,'Cheese Veg Burger')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,169,'Cheese Veg Burger')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Crispy Chicken Burger</td>
+                        <td class="price">₹189</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,189,'Crispy Chicken Burger')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,189,'Crispy Chicken Burger')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,189,'Crispy Chicken Burger')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Double Patty Chicken Burger</td>
+                        <td class="price">₹229</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,229,'Double Patty Burger')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,229,'Double Patty Burger')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,229,'Double Patty Burger')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Paneer Tikka Burger</td>
+                        <td class="price">₹179</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,179,'Paneer Burger')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,179,'Paneer Burger')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,179,'Paneer Burger')">+</button></div></div></td>
+                    </tr>
+
+                    <tr class="category-row" id="Fries-sides">
+                        <td colspan="3">Fries &amp; Sides</td>
+                    </tr>
+                    <tr>
+                        <td>Classic Salted Fries</td>
+                        <td class="price">₹99</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,99,'Salted Fries')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,99,'Salted Fries')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,99,'Salted Fries')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Peri Peri Fries</td>
+                        <td class="price">₹119</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,119,'Peri Peri Fries')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,119,'Peri Peri Fries')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,119,'Peri Peri Fries')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Loaded Fries</td>
+                        <td class="price">₹149</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,149,'Cheese Fries')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,149,'Cheese Fries')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,149,'Cheese Fries')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Popcorn</td>
+                        <td class="price">₹169</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,169,'Chicken Popcorn')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,169,'Chicken Popcorn')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,169,'Chicken Popcorn')">+</button></div></div></td>
+                    </tr>
+                    <tr>
+                        <td>Mozzarella Sticks</td>
+                        <td class="price">₹189</td>
+                        <td class="cart-cell"><div class="cart-control"><button class="add-btn" onclick="addItem(this,189,'Mozzarella Sticks')">+ Add</button><div class="qty-control" style="display:none;"><button class="qty-btn" onclick="decrease(this,189,'Mozzarella Sticks')">−</button><span class="qty">1</span><button class="qty-btn" onclick="increase(this,189,'Mozzarella Sticks')">+</button></div></div></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <article id="customer_info">
+            <h2>cusomer Info</h2>
+            <form id="customerForm">
+
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">Your Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Entre Your Name" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone No.</label>
+                        <input type="tel" id="phone" name="phone" placeholder="10-digit number" pattern="[0-9]{10}" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dine In or Takeaway?</legend>
+                    <p>
+                        <input type="radio" name="wheretoeat" id="dinein" value="Dine In" required>
+                        <label for="dinein">Dine In</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="wheretoeat" id="takeaway" value="Takeaway">
+                        <label for="takeaway">Takeaway</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pick Your Table</legend>
+                    <select id="tableNo" required>
+                        <option value="">— Select a table —</option>
+                        <option value="1">Table 1</option>
+                        <option value="2">Table 2</option>
+                        <option value="3">Table 3</option>
+                        <option value="4">Table 4</option>
+                        <option value="5">Table 5</option>
+                        <option value="6">Table 6</option>
+                        <option value="7">Table 7</option>
+                        <option value="8">Table 8</option>
+                        <option value="9">Table 9</option>
+                        <option value="10">Table 10</option>
+                    </select>
+                </fieldset>
+
+            </form>
+        </article>
+
+    
+        <section id="cart-section">
+            <h2>Your Order</h2>
+            <ul id="cart-items"></ul>
+            <p class="cart-total">Total: <strong>₹<span id="total-price">0</span></strong></p>
+            <div class="cart-actions">
+                <button class="btn-order" onclick="placeOrder()">Place Order</button>
+                <button class="btn-reset" onclick="resetCart()">Reset</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Made by <a href="codecatalyst.html">Code Catalyst</a></p>
+        <p>Need help? Call us: <a href="tel:1234567890">1234567890</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

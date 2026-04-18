@@ -1,0 +1,20 @@
+*{
+    background-color: rgb(103, 225, 255);
+}
+body{
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+}
+.heading{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+}
+p,li{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#main_heading{
+    background-color: #2824ff;
+    border-radius: 25%;
+    border-radius: 20px;
+}

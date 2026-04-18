@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen — Order</title>
+    <link rel="stylesheet" href="kitchen.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("IqmuMM_mB7p4baS9S"); // your public key
+        })();
+    </script>
+</head>
+
+<body>
+
+<div class="kitchen-container">
+
+    <div class="kitchen-banner">
+        <span class="label">Order Summary</span>
+        <h1>🍳 Your Order</h1>
+    </div>
+
+    <div class="kitchen-body">
+
+        <div class="info-card">
+            <h3>Customer Details</h3>
+            <div class="info-row"><span class="key">Name</span><span class="val" id="customerName">—</span></div>
+            <div class="info-row"><span class="key">Phone</span><span class="val" id="customerPhone">—</span></div>
+            <div class="info-row"><span class="key">Table</span><span class="val" id="tableNumber">—</span></div>
+            <div class="info-row"><span class="key">Type</span><span class="val" id="orderType">—</span></div>
+        </div>
+
+        <div class="items-card">
+            <h3>📋 Items Ordered</h3>
+            <ul class="item-list" id="orderItemsList"></ul>
+            <div class="total-row">
+                <span>Total</span>
+                <span>₹<span id="totalAmount">0</span></span>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="ready-btn" id="placeOrderBtn">Place Order</button>
+            <button class="back-btn" id="updateBtn">← Update cart/detail</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="kitchen.js"></script>
+
+</body>
+</html>
