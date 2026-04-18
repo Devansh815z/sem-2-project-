@@ -323,101 +323,73 @@ html, body {
 }
 
 @media (max-width: 768px) {
+
+    /* Header */
     .brand-name {
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
     }
-    
+
     .brand {
         align-items: center;
-        width: 100%;
     }
 
     .xero {
         margin-right: 0;
     }
 
-    .brand-address {
-        margin-top: 15px;
-        font-size: 14px;
+    /* Navigation */
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
-    #customer_info, #cart-section {
-        width: 92%;
+    .nav-link {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    /* Sections full width */
+    #customer_info,
+    #cart-section {
+        width: 90%;
         margin: 20px auto;
-        padding: 15px;
-        box-sizing: border-box;
     }
 
+    /* Form inputs */
     #customer_info label {
         display: block;
         width: 100%;
         margin-bottom: 5px;
     }
 
-    #customer_info input[type="text"],
-    #customer_info input[type="tel"],
+    #customer_info input,
     #customer_info select {
         width: 100%;
-        box-sizing: border-box;
     }
 
-    .main-nav {
-        flex-wrap: wrap;
-        padding: 10px 5px;
-    }
-    
-    .nav-link {
-        font-size: 11px;
-        padding: 6px 10px;
-    }
-
-    .menu-table, 
-    .menu-table thead, 
-    .menu-table tbody, 
-    .menu-table th, 
-    .menu-table td, 
-    .menu-table tr { 
-        display: block; 
-        width: 100%;
-    }
-
-    .menu-table thead {
-        display: none;
-    }
-
-    .menu-table tbody tr {
-        margin-bottom: 15px;
-        padding: 10px;
-    }
-
-    .menu-table td {
-        text-align: left;
-        padding: 8px 0;
-        box-sizing: border-box;
-    }
-
-    .price {
-        text-align: left;
+    /* Table scroll fix */
+    .menu-table {
         display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    .cart-control {
-        justify-content: flex-start;
-    }
-
-    #food-gallery {
-        gap: 8px;
-        padding: 10px;
-    }
-
-    .gallery-item {
-        width: 47%;
-    }
-
+    /* Gallery images */
     .gallery-item img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
+        width: 100px;
+        height: 110px;
+    }
+
+    /* Buttons */
+    .add-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .qty-btn {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
     }
 }
