@@ -280,30 +280,41 @@ body{
     background-color: #333;
 }
 #food-gallery {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding: 10px;
+    padding: 12px;
     background: #fafafa;
-    flex-wrap: wrap;
+    box-sizing: border-box;
 }
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
 .gallery-item img {
-    width: 125px;
-    height: 140px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     display: block;
 }
+
 .gallery-item img:hover {
     transform: scale(1.05);
 }
+
 .gallery-item figcaption {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 13px;
-    padding: 4px 0;
+    font-size: 12px;
+    padding: 5px 2px 2px;
+    color: #333;
 }
 .site-footer {
     background-color: black;
@@ -321,21 +332,13 @@ html, body {
     width: 100%;
     position: relative;
 }
-
-/* ── MOBILE RESPONSIVE (screens 600px and below) ── */
 @media (max-width: 600px) {
-
-    /* Scale down the giant brand name */
     .brand-name {
         font-size: 52px;
     }
-
-    /* Remove the negative margin that causes overflow */
     .xero {
         margin-right: 0;
     }
-
-    /* Stack nav links and allow wrapping */
     .main-nav {
         flex-wrap: wrap;
         justify-content: center;
@@ -347,23 +350,17 @@ html, body {
         font-size: 12px;
         padding: 6px 10px;
     }
-
-    /* Make the menu table scrollable instead of overflowing */
     .menu-table {
         display: block;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
-
-    /* Full width forms on mobile */
     #customer_info,
     #cart-section {
         width: 92%;
         margin: 20px auto;
         padding: 14px;
     }
-
-    /* Make form labels and inputs stack vertically */
     #customer_info label {
         display: block;
         width: 100%;
@@ -376,15 +373,19 @@ html, body {
         width: 100%;
         box-sizing: border-box;
     }
-
-    /* Smaller gallery images on mobile */
     .gallery-item img {
         width: 100px;
         height: 110px;
     }
-
-    /* Smaller address text */
     .brand-address {
         font-size: 13px;
     }
+    #food-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 8px;
+    }
+.gallery-item figcaption {
+    font-size: 11px;
+}
 }
