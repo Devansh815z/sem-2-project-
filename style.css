@@ -322,26 +322,25 @@ html, body {
     position: relative;
 }
 
-@media (max-width: 768px) {
+/* ── MOBILE RESPONSIVE (screens 600px and below) ── */
+@media (max-width: 600px) {
 
-    /* Header */
+    /* Scale down the giant brand name */
     .brand-name {
-        font-size: 40px;
-        text-align: center;
+        font-size: 52px;
     }
 
-    .brand {
-        align-items: center;
-    }
-
+    /* Remove the negative margin that causes overflow */
     .xero {
         margin-right: 0;
     }
 
-    /* Navigation */
+    /* Stack nav links and allow wrapping */
     .main-nav {
         flex-wrap: wrap;
-        gap: 5px;
+        justify-content: center;
+        gap: 4px;
+        padding: 6px 0;
     }
 
     .nav-link {
@@ -349,47 +348,43 @@ html, body {
         padding: 6px 10px;
     }
 
-    /* Sections full width */
-    #customer_info,
-    #cart-section {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    /* Form inputs */
-    #customer_info label {
-        display: block;
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
-    #customer_info input,
-    #customer_info select {
-        width: 100%;
-    }
-
-    /* Table scroll fix */
+    /* Make the menu table scrollable instead of overflowing */
     .menu-table {
         display: block;
         overflow-x: auto;
-        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
 
-    /* Gallery images */
+    /* Full width forms on mobile */
+    #customer_info,
+    #cart-section {
+        width: 92%;
+        margin: 20px auto;
+        padding: 14px;
+    }
+
+    /* Make form labels and inputs stack vertically */
+    #customer_info label {
+        display: block;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    #customer_info input[type="text"],
+    #customer_info input[type="tel"],
+    #customer_info select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Smaller gallery images on mobile */
     .gallery-item img {
         width: 100px;
         height: 110px;
     }
 
-    /* Buttons */
-    .add-btn {
-        padding: 5px 10px;
-        font-size: 12px;
-    }
-
-    .qty-btn {
-        width: 24px;
-        height: 24px;
-        font-size: 14px;
+    /* Smaller address text */
+    .brand-address {
+        font-size: 13px;
     }
 }
