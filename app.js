@@ -168,3 +168,13 @@ function resetCart()
     qty.forEach(q => q.innerText = "1")
 
 }
+
+window.addEventListener('DOMContentLoaded', function () {
+    const params = new URLSearchParams(window.location.search);
+    const tableNo = params.get('table');
+
+    if (tableNo) {
+        const tableSelect = document.getElementById('tableNo');
+        tableSelect.value = tableNo;
+    }
+});
